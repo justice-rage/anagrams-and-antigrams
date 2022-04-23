@@ -8,6 +8,12 @@ class AnagramChecker
     @word1 = word1
     @word2 = word2
   end
+
+  def anagram()
+    if (@word1.chars.sort(&:casecmp) == @word2.chars.sort(&:casecmp))
+      "The pair are anagrams."
+    end
+  end
 end
 
 
