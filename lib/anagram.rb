@@ -12,6 +12,8 @@ class AnagramChecker
   def anagram()
     if (@word1.chars.sort(&:casecmp) == @word2.chars.sort(&:casecmp))
       "The pair are anagrams."
+    elsif (@word1.chars.sort(&:casecmp) != @word2.chars.sort(&:casecmp))
+      "The pair are antigrams."
     end
   end
 end
