@@ -12,5 +12,10 @@ describe (AnagramChecker) do
     word_pair = AnagramChecker.new("light", "dark")
     expect(word_pair.anagram).to(eq("The pair are antigrams."))
   end
+
+  it("will check if word1 and word2 are words") do
+    word_pair = AnagramChecker.new("lght", "drk")
+    expect(word_pair.anagram).to(eq("The pair are not words."))
+  end
 end
 end
