@@ -16,7 +16,7 @@ _This project compares words and sentences to check if they are anagrams, antigr
 
 _Two words are anagrams if they contain the exact same letters in a different order. For example, "ruby" and "bury" are anagrams because they contain the same letters._
 
-_If phrases aren't anagrams, the method checks whether they are actually "antigrams." For our purposes, a word is an "antigram" of another word if letters from the two inputs do not match. For example, "hi" has no matches with "bye"._
+_If phrases aren't anagrams, the program checks whether they are actually "antigrams." For our purposes, a word is an "antigram" of another word if letters from the two inputs do not match. For example, "hi" has no matches with "bye"._
 
 _If you are curious you can run this program in your terminal by following the instructions below._
 
@@ -24,7 +24,7 @@ _If you are curious you can run this program in your terminal by following the i
 
 * _Navigate to [GitHub](https://github.com/justicepelteir/anagrams-and-antigrams)_
 * _Clone this git repository to your machine_
-* _Navigate to the root folder and open in VS Code_
+* _Navigate to the root folder of this project and open in VS Code_
 * _Install required Gems(packages) by typing the below command in your terminal:_
 > _bundle_
 
