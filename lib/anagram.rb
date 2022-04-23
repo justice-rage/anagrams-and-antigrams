@@ -1,4 +1,5 @@
 #!/usr/bin/ruby
+require("pry")
 
 class AnagramChecker
   attr_reader (:word1, :word2)
