@@ -1,6 +1,10 @@
 require('rspec')
-require('anagrams_and_antigrams')
+require('anagram')
 
-describe('#title_case') do
-  # eventually put specs here
+describe (AnagramChecker) do
+  describe('#anagram') do
+    it("will check if word1 and word2 are anagrams") do
+      word_pair = AnagramChecker.new("ruby", "bury")
+      expect(word_pair.anagram).to(eq("The words are anagrams"))
+    end
 end
