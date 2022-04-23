@@ -7,4 +7,5 @@ describe (AnagramChecker) do
       word_pair = AnagramChecker.new("ruby", "bury")
       expect(word_pair.anagram).to(eq("The pair are anagrams."))
     end
+  end
 end
