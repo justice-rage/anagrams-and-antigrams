@@ -10,9 +10,11 @@ class AnagramChecker
   end
 
   def anagram()
-    if (@word1.chars.sort(&:casecmp) == @word2.chars.sort(&:casecmp))
+    if !(@word1 =~ /[aeiou]/) && !(@word2 =~ /[aeiou]/)
+    "The pair are not words."
+    elsif (@word1.chars.sort(&:casecmp) == @word2.chars.sort(&:casecmp))
       "The pair are anagrams."
-    elsif (@word1.chars.sort(&:casecmp) != @word2.chars.sort(&:casecmp))
+    else (@word1.chars.sort(&:casecmp) != @word2.chars.sort(&:casecmp))
       "The pair are antigrams."
     end
   end
