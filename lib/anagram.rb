@@ -18,6 +18,3 @@ class AnagramChecker
     end
   end
 end
-
-
-# puts "Hello world!"
